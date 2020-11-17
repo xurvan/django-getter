@@ -17,6 +17,7 @@ def get_setting(attr: str, *fields):
 
 
 def get_model(model, app_label=None):
+    model = model.lower()
     if app_label:
         if app_label not in apps.all_models:
             raise ValueError(f'App not found ({app_label})')
