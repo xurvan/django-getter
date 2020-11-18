@@ -1,6 +1,8 @@
 from django.apps import apps
 from django.conf import settings
 
+__version__ = '0.1.0.dev'
+
 
 def get_setting(attr: str, *fields):
     if not hasattr(settings, attr):
